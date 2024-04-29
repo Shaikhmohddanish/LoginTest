@@ -64,7 +64,7 @@
             <div class="info-box overflow-hidden">
                <span class="pro-status">
                   Booking Open: Limited Time Only <br> 
-                  <h4 class="text-center">NEW LAUNCH</h4>
+                  NEW LAUNCH
                </span>
                <span class="pro-title">KALPATARU CITY-PRIMERA
                </span> 
@@ -92,10 +92,18 @@
                <!--</ul>-->
                <span class="d-block mb-1 text-capitalize " style="font-size: 15px; width: 95%;  margin-left: auto !important;
                   margin-right: auto !important;  background: transparent;font-weight: bold; text-align: center;color: #fff; "> 
-               <span class="blink-soft" style="color: #fff; display: block; background-color: var(--colorPrimary); background-size: 400% 400%; -webkit-animation: Gradient 3s ease infinite; -moz-animation: Gradient 3s ease infinite; animation: Gradient 3s ease infinite; font-size: 15px; padding: 5px; text-align: left;">
-                  Limited Period Offer!!!
-              </span>
-              
+              <style>
+    @keyframes blink {
+        0% { opacity: 0; }
+        50% { opacity: 1; }
+        100% { opacity: 0; }
+    }
+</style>
+
+<span class="blink-soft" style="color: #fff; display: block; background-color: var(--colorPrimary); background-size: 400% 400%; animation: blink 1s linear infinite; font-size: 15px; padding: 5px; text-align: left;">
+    Limited Period Offer!!!
+</span>
+
                <span style="color:#171717; display: block;  padding: 15px 10px; background-color:#113173">
                <span style="display: block;font-size: 14px!important;color:#fff;text-align: left "> 
                ✅ Bank Subvention<br>
@@ -136,7 +144,7 @@
             </section>
 
             <section class="section shadow-sm lazyload">
-               <a href="#" class="enqModal" data-form="lg" data-title="Virtual Site Visit" data-btn="Start Tour" data-enquiry="Virtual Site Tour" data-redirect="virtualtour" data-toggle="modal" data-target="#virtuall">
+               <a href="#" class="enqModal" data-form="lg" data-title="Virtual Site Visit" data-btn="Start Tour" data-enquiry="Virtual Site Tour" data-redirect="virtualtour" data-toggle="modal" data-target="#enquireNow">
                   <div class="at-property-item my-2 pt-md-0">
                      <div class="at-property-img vsv-img">
                         <picture>
@@ -146,6 +154,9 @@
                         </picture>
                         <div class="at-property-overlayer"></div>
                               <span class="btn btn-default at-property-btn" role="button">Enquire Now</span> 
+                              <div class="at-property-dis effetGradient">
+                                 <h5>Enquire Now</h5>
+                              </div>
                   </div>
                </a>
             </section>
@@ -929,6 +940,40 @@
                </div>
             </div>
          </div>
+
+
+         <div class="modal fade" id="enquireNow" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered enq-modal" role="document">
+               <div class="modal-content">
+                  <div class="modal-body text-center">
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button> 
+                     <div class="modal-head"><span class="modal-title">Enquire Now</span></div>
+                     <div class="d-flex">
+                        <div class="flex-fill align-self-center flex-shrink-1 modal-highlight-bg d-none d-lg-block">
+                           <span class="modal-highlight-title">We Promise</span> 
+                           <ul class="modal-highlight">
+                              <li><i class="mi mi-support-call"></i><span>Instant Call Back</span></li>
+                              <li><i class="mi mi-support-visit"></i><span>Free Site Visit</span></li>
+                              <li><i class="mi mi-support-price"></i><span>Unmatched Price</span></li>
+                           </ul>
+                        </div>
+                        <div class="flex-fill align-self-center">
+                           <span class="modal-title-secondary">Register for <span class="text-danger">Best Offers!!</span></span> 
+                           <form action="https://prelaunch-projects.in/kalpataru-parkcity/thankyou.php" method="POST" class="form-modal">
+                              <input type="hidden" name="lead_form_name" value="Virtual Tour">
+                              <div class="form-group"> <input type="text" name="name" pattern="[a-zA-Z ]+" class="form-control rounded-0 micro-form-field" required placeholder="Name"> </div>
+                              <div class="form-group"> <input type="hidden"  value=""> <input type="tel" id="intTelInput-popup"  name="mobile" class="intTelInput form-control rounded-0 micro-form-field" required placeholder="Mobile No"> </div>
+                              <div class="form-group form-md"> <input type="email" name="email" class="form-control rounded-0 micro-form-field" placeholder="E-Mail Address"> </div>
+                              <input type="hidden" id="enquireName" value="Enquire Now"> <button type="submit" class="btn btn-info micro-form-btn effetGradient effectScale">Get Instant Call Back</button> 
+                           </form>
+                        </div>
+                     </div>
+                     <a href="tel:+919930224688" class="modal-call-btn"><i class="mi mi-call"></i> +91 9930224688</a> 
+                  </div>
+               </div>
+            </div>
+         </div>
+
          <div class="modal fade" id="viewgallery" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered enq-modal" role="document">
                <div class="modal-content">
